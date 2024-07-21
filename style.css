@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.bg-top img {
+    position: fixed;
+    right: 800px;
+    bottom: 350px;
+}
+
+.bg-bottom img {
+    position: fixed;
+    left: 800px;
+    top: 370px;
+}
+
+.card-container {
+    margin-top: 22vh;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-bg-pattern {
+    max-width: 375px;
+    position: relative;
+}
+
+.pattern-pfp img{
+    position: absolute;
+    left: 120px;
+    top: 90px;
+    width: 110px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.user-info-name-age {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: var(--dark-desaturated-blue);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+p {
+    color: var(--grayish-blue);
+}
+
+.user-info h1 {
+    padding-right: 15px;
+    margin-top: 80px;
+}
+#age{
+    color: var(--grayish-blue);
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.location {
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.social-score {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(189, 186, 186);
+    padding-top: 28px;
+    margin-bottom: 20px;
+}
+
+.score p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media  (max-width: 400px){ 
+
+    .bg-top img {
+        position: fixed;
+        right: 120px;
+        bottom: 300px;
+    }
+    
+    .bg-bottom img {
+        position: fixed;
+        left: 170px;
+        top: 300px;
+    }
+    .card-bg-pattern {
+        max-width: 300px;
+        position: relative;
+    }
+    .pattern-pfp img{
+        left: 98px;
+
+    }
+    
+}
